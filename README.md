@@ -1,2 +1,3 @@
 # wt-project
-A simple website 
+
+A simple website made in HTML, CSS, JS and PHP.
