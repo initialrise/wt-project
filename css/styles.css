@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap");
+* {
+  margin: 0;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  background-color: #04020d;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  font-family: "Trebuchet MS";
+  /* background: rgb(34, 193, 19e);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 12%,
+    rgba(9, 26, 121, 0.8802871490393032) 94%
+  ); */
+  background: rgb(15, 127, 179);
+  background: linear-gradient(
+    0deg,
+    rgba(15, 127, 179, 1) 12%,
+    rgba(9, 26, 121, 0.8802871490393032) 94%
+  );
+  backdrop-filter: blur(10px);
+}
+header h1 {
+  padding: 10px 0;
+  display: inline-block;
+  /* color: #00d941; */
+  color: #edcd5a;
+  font-family: "Rubik Vinyl";
+  /* margin: 0 auto; */
+}
+header img {
+  max-height: 50px;
+  /* float: left; */
+  position: absolute;
+  display: block;
+}
+nav ul {
+  display: flex;
+  /* background-color: rgb(0, 0, 0); */
+  justify-content: space-around;
+  /* background-color: #3e4042; */
+  background-color: #0a2647;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  /* background: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(38, 160, 253, 0.345)
+  ); */
+  box-shadow: 0px 3px 4px rgb(6, 110, 245);
+}
+nav ul li {
+  list-style: none;
+  padding: 10px 44px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  padding: 10px 44px;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: white;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(27, 86, 175, 0.858) 67%
+  );
+  /* border: 1px solid white; */
+  box-shadow: 0px 0px 15px rgb(6, 110, 245);
+}
+
+#content {
+  display: flex;
+  height: 100%;
+}
+main {
+  width: 80%;
+  padding: 20px 80px;
+  text-align: left;
+  -webkit-text-stroke: 0.1px #000;
+  overflow: hidden;
+  text-shadow: 0px 0px 5px black;
+}
+main img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 5px 3px rgb(6, 110, 245);
+  opacity: 0.8;
+  /* -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  ); */
+}
+main h1 {
+  -webkit-text-stroke: 1px #000;
+  text-decoration: underline grey;
+}
+main ul li {
+  line-height: 30px;
+}
+#loginform {
+  padding: 150px;
+  text-align: center;
+}
+#loginform > h1 {
+  margin-bottom: 8px;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgb(21, 193, 184);
+}
+#dashboard h1 {
+  text-align: center;
+  text-decoration: none;
+}
+#searchsection {
+  margin-top: 40px;
+  text-align: center;
+}
+#search,
+#searchbtn {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 20px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+#search {
+  padding: 20px 70px;
+}
+#suggestions {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#usertable {
+  margin: 90px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+#usertable table {
+  width: 70%;
+  border-radius: 10px;
+  text-align: center;
+}
+#usertable table,
+th,
+td {
+  border: 1px solid rgb(138, 166, 223);
+}
+th {
+  background-color: black;
+  border: 1px solid black;
+}
+#logmeout {
+  text-align: center;
+}
+#logmeout button {
+  padding: 10px 30px;
+  font-size: larger;
+  background-color: green;
+  border: 1px solid black;
+}
+#logmeout button a {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .nav-icon {
+    display: none;
+  }
+  nav ul li {
+    padding: 0;
+  }
+  nav ul li a {
+    padding: 0;
+  }
+  #content {
+    flex-wrap: wrap;
+  }
+  #content > main {
+    width: 100%;
+  }
+  #content > #sidebar {
+    display: none;
+  }
+  #loginform {
+    padding: 0px;
+  }
+
+  #username,
+  #password,
+  #submit {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  main {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  form {
+    padding: 0px;
+  }
+}
+/* @media (max-width: 450px) {
+  main {
+    padding: 10px;
+  }
+} */
+#submit {
+  background-color: green;
+  color: white;
+  border-radius: 8px;
+  margin: 8px;
+  box-shadow: 0px 0px 9px rgba(224, 239, 6, 0.63);
+  background: rgb(95, 230, 107);
+  background: linear-gradient(
+    90deg,
+    rgba(95, 230, 107, 1) 0%,
+    rgba(78, 123, 133, 1) 100%
+  );
+}
+#username:focus,
+#password:focus,
+#submit:hover {
+  box-shadow: 0px 0px 20px rgb(0, 255, 17);
+}
+#username,
+#password,
+#submit {
+  box-sizing: border-box;
+  width: 350px;
+  padding: 24px;
+  font-size: larger;
+  /* border: 1px solid white; */
+  /* border: none; */
+}
+#username,
+#password {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 8px;
+  color: rgb(137, 222, 237);
+  box-shadow: 0px 0px 9px rgba(224, 239, 6, 0.63);
+}
+
+#sidebar {
+  width: 20%;
+  padding: 20px 0;
+  background-color: #092e59d4;
+  background: rgba(2, 50, 122, 0.779);
+  box-shadow: -12px 3px 10px #000;
+  border-radius: 0px 0px 0px 20px;
+  overflow: hidden;
+  text-shadow: 0px 0px 5px black;
+}
+#sidebar #now {
+  border: 1px solid white;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+#sidebar #movietitle {
+  margin-bottom: 5px;
+  text-shadow: 0px 0px 5px black;
+}
+#sidebar #plot {
+  text-align: left;
+  padding: 10px;
+  font-weight: lighter;
+}
+
+#sidebar img {
+  max-height: 400px;
+  padding: 10px 0;
+}
+#buttons {
+  margin: 0px 10px;
+}
+.watch-trailer,
+#watch-now {
+  background-color: green;
+  color: white;
+  border: 0;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0px 4px 2px #000;
+  text-decoration: none;
+  padding: 4px 55px;
+}
+#watch-trailer:hover {
+  box-shadow: 0px 0px 9px rgba(224, 239, 6, 0.63);
+}
+footer {
+  background-color: black;
+  padding: 10px;
+  /* background: linear-gradient(rgba(60, 7, 7, 0), rgba(82, 116, 142, 0.345)); */
+}
+
+.fa {
+  color: white;
+  background-color: #0a2647;
+}
+.fa-social {
+  padding: 3px 5px;
+  background-color: black;
+}
